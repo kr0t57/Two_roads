@@ -6,7 +6,7 @@ public class Swipe : MonoBehaviour
 {
     private bool tap, swipeLeft, swipeRight, swipeUp, swipeDown;
     private bool isDragging = false;
-    private Vector2 startTouch, swipeDelta; 
+    private Vector2 startTouch, swipeDelta;
 
     private void Update()
     {
@@ -72,6 +72,7 @@ public class Swipe : MonoBehaviour
             }
             else
             {
+                //Up or Down direction
                 //Up or Down direction
                 if(y < 0)
                     swipeDown = true;
